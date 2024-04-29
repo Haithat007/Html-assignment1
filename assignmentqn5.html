@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h2>Academic Information</h2>
+        <form>
+            <label for="degree">Degree:</label>
+            <select id="degree" name="degree">
+                <option value="MBA">Master of Business Administration</option>
+            </select>
+
+            <label for="student_id">Student ID:</label>
+            <input type="text" id="student_id" name="student_id">
+
+            <label for="classes_attended">Classes Attended:</label>
+            <select id="classes_attended" name="classes_attended">
+                <option value="Geography">Geography</option>
+                <option value="Mathematics">Mathematics</option>
+                <option value="English">English</option>
+            </select>
+        </form>
+    </div>
+
+    <div class="box">
+        <h2>Personal Details</h2>
+        <form>
+            <label for="first_name">First Name:</label>
+            <input type="text" id="first_name" name="first_name">
+
+            <label for="last_name">Last Name:</label>
+            <input type="text" id="last_name" name="last_name">
+
+            <label for="gender">Gender:</label>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+
+            <label for="terms">TERMS AND CONDITIONS:</label>
+            <textarea id="terms" name="terms"></textarea>
+
+            <button type="submit">Send Form</button>
+            <button type="reset">Clear Form</button>
+        </form>
+    </div>
+</body>
+</html>

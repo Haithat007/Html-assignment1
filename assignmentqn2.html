@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Text Formatting Tags Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            position: relative;
+        }
+        h1 {
+            font-weight: bold;
+        }
+        .marquee {
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50%;
+            overflow: hidden;
+            white-space: nowrap;
+            text-align: right;
+        }
+        .superscript {
+            vertical-align: super;
+        }
+        .subscript {
+            vertical-align: sub;
+        }
+        em, u, strong, s, code, sup, sub, big, small {
+            display: block;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>To illustrate text formatting tags</h1>
+    
+    <div class="marquee">
+        <p>This is an alternate Marquee text</p>
+    </div>
+
+    <em>This is italicized</em>
+    <u>This is underlined</u>
+    <strong>This is emphasized</strong>
+    <s>This is stinked text</s>
+    <code>This is computer code</code>
+    <sup class="superscript">This is superscript code</sup>
+    <sub class="subscript">This is subscript code</sub>
+    <big>This is big text</big>
+    <small>This is small text</small>
+</body>
+</html>

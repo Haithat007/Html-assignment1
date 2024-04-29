@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: center;
+        }
+        td.gray {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+<body>
+    <h2>Table Example</h2>
+    <table>
+        <tr>
+            <th colspan="4">Table Heading cell Spanning 4 Columns</th>
+        </tr>
+        <tr>
+            <td>Normal Cell</td>
+            <td colspan="2">Cell Spanning 2 Columns</td>
+            <td>Normal Cell</td>
+        </tr>
+        <tr>
+            <td class="gray" rowspan="3">Cell Spanning 3 Rows with a Gray(US spelling) Background</td>
+            <td>Normal Cell</td>
+            <td>Normal Cell</td>
+            <td>Normal Cell</td>
+        </tr>
+        <tr>
+            <td>Normal Cell</td>
+            <td  rowspan="2" colspan="2">Cell Spanning 2 Rows and 2 Columns</td>
+        </tr>
+        <tr>
+            <td>Normal Cell</td>
+        </tr>
+    </table>
+</body>
+</html>

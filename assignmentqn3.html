@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>List Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        h1 {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        .nested-list {
+            text-align: left;
+            margin-left: 5px;
+        }
+        .definition-list {
+            text-align: left;
+            margin-left: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1>To illustrate Nested and Definition List Tags</h1>
+
+    <h2>An ordered nested List:</h2>
+    <ol type="1" >
+        <li>Coffee</li>
+        <li>Tea
+            <ol type="a" class="nested-list">
+                <li>China</li>
+                <li>Africa</li>
+            </ol>
+        </li>
+        <li>Milk</li>
+    </ol>
+
+    <h2>A Definition List:</h2>
+    <dl class="definition-list">
+        <dt>Bangalore</dt>
+        <dd>Capital City of Karnataka</dd>
+        <dt>Mumbai</dt>
+        <dd>Capital city of Maharashtra</dd>
+    </dl>
+</body>
+</html>
